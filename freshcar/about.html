@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Про нас - Freshcar</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Freshcar</h1>
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav id="navbar">
+                <a href="index.html">Головна</a>
+                <a href="application.html">Залишити заявку</a>
+                <a href="about.html">Про нас</a>
+            </nav>
+        </header>
+        <button class="filter-toggle" onclick="toggleFilter()">Фільтри</button>
+        <div class="main-content">
+            <div class="about-section">
+                <div class="video-background">
+                    <video autoplay loop muted>
+                        <source src="style/aboutfon.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text-overlay">
+                    <h2>Про компанію</h2>
+                    <p>Ми - компанія Freshcar, яка займається продажем та орендою автомобілів. Наша мета - надати найкращий сервіс для наших клієнтів і забезпечити їм якісні та доступні автомобілі для будь-яких потреб. Ми пропонуємо широкий вибір автомобілів, включаючи нові та б/в моделі.</p>
+                    
+                    <h3>Наша місія</h3>
+                    <p>Забезпечити високоякісне обслуговування наших клієнтів і надати доступ до автомобілів з найкращими характеристиками та умовами для кожного.</p>
+
+                    <h3>Наша команда</h3>
+                    <p>Нашу команду складають досвідчені професіонали, які працюють на ринку автомобілів більше 10 років. Ми завжди готові допомогти вам вибрати найкращий автомобіль для ваших потреб.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Новий блок з цінами -->
+        <div class="pricing-section">
+            <h2>Наші послуги</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Оренда автомобіля</h3>
+                    <p>Від 500 грн/день</p>
+                    <button>Детальніше</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Продаж автомобілів</h3>
+                    <p>Від 150,000 грн</p>
+                    <button>Детальніше</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Сервісне обслуговування</h3>
+                    <p>Від 1,000 грн</p>
+                    <button>Детальніше</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Freshcar. Усі права захищені.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

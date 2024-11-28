@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заявка на автомобіль</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Подати заявку</h1>
+            <!-- Бургер-меню -->
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav id="navbar">
+                <a href="index.html">Головна</a>
+                <a href="application.html">Залишити заявку</a>
+                <a href="about.html">Про нас</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Заповніть форму для заявки</h2>
+            <form id="application-form">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" placeholder="Ваше ім'я" required />
+
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" placeholder="Ваш email" required />
+
+                <label for="phone">Номер телефону:</label>
+                <input type="tel" id="phone" placeholder="Ваш номер телефону" required />
+
+                <label for="car">Виберіть автомобіль:</label>
+                <select id="car" required>
+                    <option value="">--Оберіть автомобіль--</option>
+                    <option value="Audi A4 2019">Audi A4 2019</option>
+                    <option value="Audi A5 2011">Audi A5 2011</option>
+                    <option value="Audi A5 2018">Audi A5 2018</option>
+                    <option value="Audi A6 2017">Audi A6 2017</option>
+                    <option value="Audi A7 2015">Audi A7 2015</option>
+                    <option value="Audi Q5 2020">Audi Q5 2020</option>
+                    <option value="BMW 330i 2020">BMW 330i 2020</option>
+                    <option value="BMW X5 2020">BMW X5 2020</option>
+                </select>
+
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" rows="4" placeholder="Ваше повідомлення" required></textarea>
+
+                <button type="submit" class="submit-button">Надіслати заявку</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Freshcar. Усі права захищені.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+</header>
+<main>
+    <h2>Про нас</h2>
+    <form id="application-form">
+        <label for="name">Ваше ім'я:</label>
+        <input type="text" id="name" placeholder="Ваше ім'я" required />
+
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" placeholder="Ваш email" required />
+
+        <label for="phone">Номер телефону:</label>
+        <input type="tel" id="phone" placeholder="Ваш номер телефону" required />
+
+        <label for="car">Виберіть автомобіль:</label>
+        <select id="car" required>
+            <option value="">--Оберіть автомобіль--</option>
+            <option value="Audi A4 2019">Audi A4 2019</option>
+            <option value="Audi A5 2011">Audi A5 2011</option>
+            <option value="Audi A5 2018">Audi A5 2018</option>
+            <option value="Audi A6 2017">Audi A6 2017</option>
+            <option value="Audi A7 2015">Audi A7 2015</option>
+            <option value="Audi Q5 2020">Audi Q5 2020</option>
+            <option value="BMW 330i 2020">BMW 330i 2020</option>
+            <option value="BMW X5 2020">BMW X5 2020</option>
+        </select>
+
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" rows="4" placeholder="Ваше повідомлення" required></textarea>
+
+        <button type="submit" class="submit-button">Надіслати заявку</button>
+    </form>
+</main>
+<footer>
+    <p>&copy; 2024 Freshcar. Усі права захищені.</p>
+</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

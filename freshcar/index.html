@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freshcar</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Freshcar</h1>
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav id="navbar">
+                <a href="#">Головна</a>
+                <a href="application.html">Залишити заявку</a>
+                <a href="about.html">Про нас</a>
+            </nav>
+        </header>
+        <button class="filter-toggle" onclick="toggleFilter()">Фільтри</button>
+        <div class="main-content">
+            <div class="filter" id="filter">
+                <h3>Фільтр</h3>
+                <label for="year">Рік випуску</label>
+                <input type="number" id="year-from" placeholder="від" />
+                <input type="number" id="year-to" placeholder="до" />
+                <label for="engine">Об'єм двигуна</label>
+                <input type="number" id="engine-from" placeholder="від" />
+                <input type="number" id="engine-to" placeholder="до" />
+                <label for="fuel">Тип палива</label>
+                <select id="fuel">
+                    <option value="бензин">Бензин</option>
+                    <option value="дизель">Дизель</option>
+                    <option value="газ">Газ</option>
+                </select>
+                <label for="price">Ціна</label>
+                <input type="number" id="price-from" placeholder="від" />
+                <input type="number" id="price-to" placeholder="до" />
+            </div>
+
+            <div class="cars-grid">
+                <div class="car-item">
+                    <img src="style/Audi A4 2019.jpg" alt="Audi A4 2019" class="car-image" />
+                    <div class="car-info">
+                        <p class="car-model">Audi A4 2019</p>
+                        <p class="car-specs">2.0 бензин</p>
+                        <p class="car-specs">повний привід</p>
+                    </div>
+                    <div class="price-box">
+                        <p class="car-price">Ціна: $22,000</p>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <img src="style/Audi A5 2011.jpg" alt="Audi A5 2011" class="car-image" />
+                    <div class="car-info">
+                        <p class="car-model">Audi A5 2011</p>
+                        <p class="car-specs">2.0 бензин</p>
+                        <p class="car-specs">передній привід</p>
+                    </div>
+                    <div class="price-box">
+                        <p class="car-price">Ціна: $15,000</p>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <img src="style/Audi A5 2018.jpg" alt="Audi A5 2018" class="car-image" />
+                    <div class="car-info">
+                        <p class="car-model">Audi A5 2018</p>
+                        <p class="car-specs">2.0 бензин</p>
+                        <p class="car-specs">повний привід</p>
+                    </div>
+                    <div class="price-box">
+                        <p class="car-price">Ціна: $20,000</p>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <img src="style/Audi A6 2017 .jpg" alt="Audi A6 2017" class="car-image" />
+                    <div class="car-info">
+                        <p class="car-model">Audi A6 2017</p>
+                        <p class="car-specs">2.0 бензин</p>
+                        <p class="car-specs">повний привід</p>
+                    </div>
+                    <div class="price-box">
+                        <p class="car-price">Ціна: $18,000</p>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <img src="style/BMW 540i 2018.jpg" alt="BMW 540i 2018" class="car-image" />
+                    <div class="car-info">
+                        <p class="car-model">BMW 540i 2018</p>
+                        <p class="car-specs">3.0 бензин</p>
+                        <p class="car-specs">повний привід</p>
+                    </div>
+                    <div class="price-box">
+                        <p class="car-price">Ціна: $30,000</p>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <img src="style/Audi Q5 2016.jpg" alt="Audi Q5 2016" class="car-image" />
+                    <div class="car-info">
+                        <p class="car-model">Audi Q5 2016</p>
+                        <p class="car-specs">2.0 бензин</p>
+                        <p class="car-specs">повний привід</p>
+                    </div>
+                    <div class="price-box">
+                        <p class="car-price">Ціна: $17,000</p>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <img src="style/BMW 330i 2020.jpg" alt="BMW 330i 2020" class="car-image" />
+                    <div class="car-info">
+                        <p class="car-model">BMW 330i 2020</p>
+                        <p class="car-specs">3.0 бензин</p>
+                        <p class="car-specs">повний привід</p>
+                    </div>
+                    <div class="price-box">
+                        <p class="car-price">Ціна: $25,000</p>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <img src="style/Audi A7 2015.jpg " alt="Audi A7 2015" class="car-image" />
+                    <div class="car-info">
+                        <p class="car-model">Audi A7 2015</p>
+                        <p class="car-specs">3.0 бензин</p>
+                        <p class="car-specs">повний привід</p>
+                    </div>
+                    <div class="price-box">
+                        <p class="car-price">Ціна: $17,000</p>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <img src="style/BMW X5 2020.jpg" alt="BMW X5 2020" class="car-image" />
+                    <div class="car-info">
+                        <p class="car-model">BMW X5 2020</p>
+                        <p class="car-specs">3.0 бензин</p>
+                        <p class="car-specs">повний привід</p>
+                    </div>
+                    <div class="price-box">
+                        <p class="car-price">Ціна: $45,000</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Freshcar. Усі права захищені.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
